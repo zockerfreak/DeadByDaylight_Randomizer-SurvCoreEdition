@@ -1,10 +1,10 @@
-## README ZUR VERSION 2.1 ##
+## README ZUR VERSION 2.2 ##
 
 HUHW zu meinem kleinen Tool, mit welchem man sich für Dead by Daylight zufällig Perks, Items, Addons und Opfergabenauswählen kann. Viel Spaß damit!
 Es ist lange noch nicht perfekt, deshalb bitte ich, mir Auffälligkeiten (Fehler, Probleme, Vorschläge und Verbesserungsvorschläge) gerne auf Discord oder via Mail mitzuteilen: zckrfrk.business@t-online.de. Vielen Dank!
 
-Zum Starten des Tools im entpackten Ordner die VBScript-Skriptdatei "DBD Loadout Generator - SurvCore Editon - V2.vbs" doppelklicken.
-Um eine Verknüpfung auf dem Desktop zu erstellen auf die Datei "DBD Loadout Generator - SurvCore Editon - V2.vbs" (VBScript-Skriptdatei) rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
+Zum Starten des Tools im entpackten Ordner die BAT-Datei "DBD Loadout Generator - SurvCore Editon - V2.2.bat" doppelklicken.
+Um eine Verknüpfung auf dem Desktop zu erstellen auf die Datei "DBD Loadout Generator - SurvCore Editon - V2.2.bat" (Batch-Datei) rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
 
 Bei Verwendung des Tools gerne meinen Namen "@zckrfrk" erwähnen/angeben, ich freue mich immer! :D
 
@@ -21,6 +21,12 @@ Mari aka Zckrfrk
 
 # CHANGELOG #
 Zur leichteren Lesbarkeit wird das de oder en vor dem Dateinamen hier im Changelog weggelassen.
+
+
+# VERSION 2.2 #
+
+• VBS Datei entfernt und stattdesssen eine Windows-Batchdatei erstellt, damit keine dubiosen Virus-Meldungen mehr auftreten.
+• Skript-Header & README angepasst
 
 
 # VERSION 2.1 #
