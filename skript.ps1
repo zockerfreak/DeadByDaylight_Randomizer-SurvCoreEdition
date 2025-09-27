@@ -1,4 +1,4 @@
-﻿### DBD Loadout Generator - SurvCore Editon Version 2.2 - Update vom 15.09.2025 - Changelog beachten! - DbD Version 9.1.3 ###
+﻿### DBD Loadout Generator ###
 
 
 Add-Type -AssemblyName System.Windows.Forms
