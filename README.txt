@@ -1,10 +1,10 @@
-## README ZUR VERSION 2.2 ##
+## README ZUR VERSION 2.3 - VEE-UPDATE ##
 
 HUHW zu meinem kleinen Tool, mit welchem man sich für Dead by Daylight zufällig Perks, Items, Addons und Opfergabenauswählen kann. Viel Spaß damit!
 Es ist lange noch nicht perfekt, deshalb bitte ich, mir Auffälligkeiten (Fehler, Probleme, Vorschläge und Verbesserungsvorschläge) gerne auf Discord oder via Mail mitzuteilen: zckrfrk.business@t-online.de. Vielen Dank!
 
-Zum Starten des Tools im entpackten Ordner die BAT-Datei "DBD Loadout Generator - SurvCore Editon - V2.2.bat" doppelklicken.
-Um eine Verknüpfung auf dem Desktop zu erstellen auf die Datei "DBD Loadout Generator - SurvCore Editon - V2.2.bat" (Batch-Datei) rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
+Zum Starten des Tools im entpackten Ordner die BAT-Datei "DBD Loadout Generator - SurvCore Editon - V2.3.bat" doppelklicken.
+Um eine Verknüpfung auf dem Desktop zu erstellen auf die Datei "DBD Loadout Generator - SurvCore Editon - V2.3.bat" (Batch-Datei) rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
 
 Bei Verwendung des Tools gerne meinen Namen "@zckrfrk" erwähnen/angeben, ich freue mich immer! :D
 
@@ -23,7 +23,21 @@ Mari aka Zckrfrk
 Zur leichteren Lesbarkeit wird das de oder en vor dem Dateinamen hier im Changelog weggelassen.
 
 
-# VERSION 2.2 #
+# VERSION 2.3 - VEE-UPDATE #
+SurvCore Editon Version 2.3 - Update vom 27.09.2025 - DbD Version 9.2.0
+
+1. DATEIEN
+	1.1 Neue Perknamen von Vee wurden mit aufgenommen (Leben auf Tour / Eins, Zwei, Drei, Vier! / Geisternoten bzw. Road Life / One-Two-Three-Four! / Ghost Notes)
+	1.2 Anpassungen vorgenommen
+		• fehlerhaftes Offering (Waffen der Yamaoka-Familie → "Wappen der Yamaoka-Familie)
+		• fehlerhafte EN-Perknamen (Detectives Hunch → Detective's Hunch / Well Make It → We'll Make It / Were Gonna Live Forever → We're Gonna Live Forever)
+
+2. SKRIPT
+	2.1 Kopfzeile entfernt und im Changelog mit aufgenommen (hier werden nun DbD Version und Updatedatum genannt)
+
+
+# VERSION 2.2 - BATCH-PATCH #
+SurvCore Editon Version 2.2 - Update vom 15.09.2025 - DbD Version 9.1.3 
 
 • VBS Datei entfernt und stattdesssen eine Windows-Batchdatei erstellt, damit keine dubiosen Virus-Meldungen mehr auftreten.
 • Skript-Header & README angepasst
