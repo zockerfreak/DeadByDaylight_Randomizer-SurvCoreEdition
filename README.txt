@@ -1,4 +1,4 @@
-## README ZUR VERSION 2.3 - VEE-UPDATE ##
+## README ZUR VERSION 2.4 - KWON-UPDATE ##
 
 HUHW zu meinem kleinen Tool, mit welchem man sich für Dead by Daylight zufällig Perks, Items, Addons und Opfergabenauswählen kann. Viel Spaß damit!
 Es ist lange noch nicht perfekt, deshalb bitte ich, mir Auffälligkeiten (Fehler, Probleme, Vorschläge und Verbesserungsvorschläge) gerne auf Discord oder via Mail mitzuteilen: zckrfrk.business@t-online.de. Vielen Dank!
@@ -23,6 +23,36 @@ Mari aka Zckrfrk
 # CHANGELOG #
 Zur leichteren Lesbarkeit wird das de oder en vor dem Dateinamen hier im Changelog weggelassen.
 
+
+# VERSION 2.4 - KWON-UPDATE #
+SurvCore Editon Version 2.4 - Update vom 12.05.2026 - DbD Version 9.6.2
+
+1. DATEIEN
+	1.1 Neue Perknamen von neuen Survs in _perks_Survivors  mit aufgenommen
+		1.1.1 Vee Boonyasak (Eins, Zwei, Drei, Vier! / Geisternoten / Leben auf Tour || die englischen Perk-Namen waren schon aufgenommen)
+		1.1.2 Dustin Henderson (Bada Bada Bumm / Planänderung / Teamwork: Volle Runde || Bada Bada Bumm / Change of Plan / Teamwork: Full Circuit)
+		1.1.3 Elf (Teamwork: Sanfte Töne / Wir sehen dich / Übersinnliche Wahrnehmung || Teamwork: Soft-Spoken / We See You / Extrasensory Perception)
+		1.1.4 Kwon Tae-Young (Ein Platz für uns / Fünf Züge voraus / Im Flow || A Place For Us / Five Moves Ahead / Flow State)
+	1.2 Neue Chars mit aufgenommen
+		• [52] _chars_Survivors (+ Vee Boonyasak + Dustin Henderson + Elf bzw. Eleven + Kwon Tae-Young)
+	1.3 Namen angepasst und/oder Reihenfolge an die Reihenfolge in DbD angepasst und/oder die letzte Zeile entfernt
+		• [170] _perks_Survivors 
+		• [14] _addons_FL_Survivors (+ Defekte Glühbirne bzw. engl. Äquivalent)
+		• [5] _addons_FV_Survivors
+		• [6] _addons_K_Survivors (- Abgegriffenes Abzeichen)
+		• [5] _addons_M_Survivors
+		• [14] _addons_MK_Survivors (+ Veredeltes Serum bzw. engl. Äquivalent)
+		• [11] _addons_TB_Survivors
+		• [6] _itemCategory_FL_Survivors (+ Geburtstags-Taschenlampe + Irrlicht bzw. engl. Äquivalent)
+		• [3] _itemCategory_FV_Survivors 
+		• [3] _itemCategory_K_Survivors
+		• [4] _itemCategory_M_Survivors (+ Blutsinn-Karte bzw. engl. Äquivalent & Fehlerbehebung "Crypric Map" → "Cryptic Map")
+		• [7] _itemCategory_MK_Survivors (+ Notfall-Sani-Kasten + Halloween-Brotdose + Geburtstag-Sani-Kasten bzw. engl. Äquivalent)
+		• [9] _itemCategory_TB_Survivors (+ Festliche Werkzeugkiste + Geburtstags-Werkzeugkiste bzw. engl. Äquivalent)
+		• [3] _itemCategory_X_Survivors (+ Chinesische Böller + Partykracher zum dritten Geburtstag bzw. engl. Äquivalent)
+		• [35] _items_Survivors (noch fehlende ergänzt)
+		• [43] _offerings_Survivors (- Blutpunkte-Offerings + VIP-Armband bzw. engl. Äquivalent)
+		
 
 # VERSION 2.3 - VEE-UPDATE #
 SurvCore Editon Version 2.3 - Update vom 27.09.2025 - DbD Version 9.2.0
