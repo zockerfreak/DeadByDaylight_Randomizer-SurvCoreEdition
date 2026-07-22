@@ -30,7 +30,7 @@ Zur leichteren Lesbarkeit wird das de oder en vor dem Dateinamen hier im Changel
 #########################
 
  ────────────────────────────┐
-  VERSION 3.0 - KILLER-UPDATE 
+ VERSION 3.0 - KILLER-UPDATE 
 └────────────────────────────
 
 SurvCore Editon Version 3.0 - Update vom 22.07.2026 - DbD Version 10.0.3 (ebenso wie Version 2.5)
