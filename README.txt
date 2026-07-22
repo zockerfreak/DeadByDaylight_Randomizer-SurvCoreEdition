@@ -1,4 +1,4 @@
-## README ZUR VERSION 2.5 - SHANE-UPDATE ##
+## README ZUR VERSION 3.0 - KILLER-UPDATE ##
 
 HUHW zu meinem kleinen Tool, mit welchem man sich für Dead by Daylight zufällig Perks, Items, Addons und Opfergabenauswählen kann. Viel Spaß damit!
 Es ist lange noch nicht perfekt, deshalb bitte ich, mir Auffälligkeiten (Fehler, Probleme, Vorschläge und Verbesserungsvorschläge) gerne auf Discord oder via Mail mitzuteilen: zckrfrk.business@t-online.de. Vielen Dank!
@@ -23,12 +23,42 @@ Mari aka Zckrfrk
 # CHANGELOG #
 Zur leichteren Lesbarkeit wird das de oder en vor dem Dateinamen hier im Changelog weggelassen.
 
+#########################
+### aktuelle Version: ###
+#########################
+
+ ─────────────────────┐
+  VERSION 3.0 - KILLER-UPDATE 
+└─────────────────────
+
+SurvCore Editon Version 3.0 - Update vom 22.07.2026 - DbD Version 10.0.3 (ebenso wie Version 2.5)
+
+1. DATEIEN
+	1.1 Killer-Ordner "KillerEdition" für das Loadout für Killer
+		1.1.1 Unterordner: de_Killer / en_Killer
+			1.1.1.1 Dateien: _addonsColours_Killer / _chars_Killer / _offerings_Killer / _perks_Killer
+		1.1.2 weitere Dateien: DBD Loadout Generator - KillerEditon.bat / language_Killer / skript_Killer (mir war wichtig, dass keine zwei Dateien gleich heißen, um Redundanzen zu vermeiden)
+	1.2 README mit #RautenUmrahmten# Überschriften versehen (aktuelle Version & ehemalige Versionen) und aktuelle Version wird schön eingerahmt
+	
+2. SKRIPT
+	2.1 Skript "skript" im Oberordner ist weiterhin das Skript für das Survivor-Loadout und wird vom Namen her nicht verändert
+		2.1.1 Überschrift vom Fenster wurde angepasst [Z11: $form.Text = "DBD Loadout Generator - Survivor"]
+
+	2.2 Skript im Unterordner wurde "skript_Killer" genannt
+		2.2.1 Überschrift vom Fenster wurde angepasst [Z11: $form.Text = "DBD Loadout Generator - Killer"]
+		2.2.2 Killer Skript anhand Surv Skript händisch angepasst, Variablen verändert, Item-Section entfernt und erfolgreich getestet
+
+
+############################
+### ehemalige Versionen: ###
+############################
+
 # VERSION 2.5 - SHANE-UPDATE #
 SurvCore Editon Version 2.5 - Update vom 22.07.2026 - DbD Version 10.0.3
 
 1. DATEIEN
 	1.1 Neue Perknamen von neuem Surv in _perks_Survivors  mit aufgenommen
-		1.1.1 Shane Wiigwaas (Kreuzverhör / Vollgas / Zur Hand gehen || Cross-Examination / Wide Open Throttle / Lend a 			Hand)
+		1.1.1 Shane Wiigwaas (Kreuzverhör / Vollgas / Zur Hand gehen || Cross-Examination / Wide Open Throttle / Lend a Hand)
 	1.2 Neuen Char mit aufgenommen
 		• [53] _chars_Survivors (+ Shane Wiigwaas)
 	1.3 Neue Items vom 10-jährigen-Jubiläums-Event hinzugefügt (je eines)
@@ -42,10 +72,10 @@ SurvCore Editon Version 2.4 - Update vom 12.05.2026 - DbD Version 9.6.2
 
 1. DATEIEN
 	1.1 Neue Perknamen von neuen Survs in _perks_Survivors  mit aufgenommen
-		1.1.1 Vee Boonyasak (Eins, Zwei, Drei, Vier! / Geisternoten / Leben auf Tour || die englischen Perk-Namen waren 			schon aufgenommen)
-		1.1.2 Dustin Henderson (Bada Bada Bumm / Planänderung / Teamwork: Volle Runde || Bada Bada Bumm / Change of 			Plan / Teamwork: Full Circuit)
-		1.1.3 Elf (Teamwork: Sanfte Töne / Wir sehen dich / Übersinnliche Wahrnehmung || Teamwork: Soft-Spoken / We See 			You / Extrasensory Perception)
-		1.1.4 Kwon Tae-Young (Ein Platz für uns / Fünf Züge voraus / Im Flow || A Place For Us / Five Moves Ahead / 			Flow State)
+		1.1.1 Vee Boonyasak (Eins, Zwei, Drei, Vier! / Geisternoten / Leben auf Tour || die englischen Perk-Namen waren schon aufgenommen)
+		1.1.2 Dustin Henderson (Bada Bada Bumm / Planänderung / Teamwork: Volle Runde || Bada Bada Bumm / Change of Plan / Teamwork: Full Circuit)
+		1.1.3 Elf (Teamwork: Sanfte Töne / Wir sehen dich / Übersinnliche Wahrnehmung || Teamwork: Soft-Spoken / We See You / Extrasensory Perception)
+		1.1.4 Kwon Tae-Young (Ein Platz für uns / Fünf Züge voraus / Im Flow || A Place For Us / Five Moves Ahead / Flow State)
 	1.2 Neue Chars mit aufgenommen
 		• [52] _chars_Survivors (+ Vee Boonyasak + Dustin Henderson + Elf bzw. Eleven + Kwon Tae-Young)
 	1.3 Namen angepasst und/oder Reihenfolge an die Reihenfolge in DbD angepasst und/oder die letzte Zeile entfernt
@@ -59,10 +89,10 @@ SurvCore Editon Version 2.4 - Update vom 12.05.2026 - DbD Version 9.6.2
 		• [6] _itemCategory_FL_Survivors (+ Geburtstags-Taschenlampe + Irrlicht bzw. engl. Äquivalent)
 		• [3] _itemCategory_FV_Survivors 
 		• [3] _itemCategory_K_Survivors
-		• [4] _itemCategory_M_Survivors (+ Blutsinn-Karte bzw. engl. Äquivalent & Fehlerbehebung "Crypric Map" → 			"Cryptic Map")
-		• [7] _itemCategory_MK_Survivors (+ Notfall-Sani-Kasten + Halloween-Brotdose + Geburtstag-Sani-Kasten bzw. 			engl. Äquivalent)
+		• [4] _itemCategory_M_Survivors (+ Blutsinn-Karte bzw. engl. Äquivalent & Fehlerbehebung "Crypric Map" → "Cryptic Map")
+		• [7] _itemCategory_MK_Survivors (+ Notfall-Sani-Kasten + Halloween-Brotdose + Geburtstag-Sani-Kasten bzw. engl. Äquivalent)
 		• [9] _itemCategory_TB_Survivors (+ Festliche Werkzeugkiste + Geburtstags-Werkzeugkiste bzw. engl. Äquivalent)
-		• [3] _itemCategory_X_Survivors (+ Chinesische Böller + Partykracher zum dritten Geburtstag bzw. engl. 				Äquivalent)
+		• [3] _itemCategory_X_Survivors (+ Chinesische Böller + Partykracher zum dritten Geburtstag bzw. engl. Äquivalent)
 		• [35] _items_Survivors (noch fehlende ergänzt)
 		• [43] _offerings_Survivors (- Blutpunkte-Offerings + VIP-Armband bzw. engl. Äquivalent)
 		
@@ -71,10 +101,10 @@ SurvCore Editon Version 2.4 - Update vom 12.05.2026 - DbD Version 9.6.2
 SurvCore Editon Version 2.3 - Update vom 27.09.2025 - DbD Version 9.2.0
 
 1. DATEIEN
-	1.1 Neue Perknamen von Vee wurden mit aufgenommen (Leben auf Tour / Eins, Zwei, Drei, Vier! / Geisternoten bzw. Road 		Life / One-Two-Three-Four! / Ghost Notes)
+	1.1 Neue Perknamen von Vee wurden mit aufgenommen (Leben auf Tour / Eins, Zwei, Drei, Vier! / Geisternoten bzw. Road Life / One-Two-Three-Four! / Ghost Notes)
 	1.2 Anpassungen vorgenommen
 		• fehlerhaftes Offering (Waffen der Yamaoka-Familie → "Wappen der Yamaoka-Familie)
-		• fehlerhafte EN-Perknamen (Detectives Hunch → Detective's Hunch / Well Make It → We'll Make It / Were Gonna 		Live Forever → We're Gonna Live Forever)
+		• fehlerhafte EN-Perknamen (Detectives Hunch → Detective's Hunch / Well Make It → We'll Make It / Were Gonna Live Forever → We're Gonna Live Forever)
 
 2. SKRIPT
 	2.1 Kopfzeile entfernt und im Changelog mit aufgenommen (hier werden nun DbD Version und Updatedatum genannt)
