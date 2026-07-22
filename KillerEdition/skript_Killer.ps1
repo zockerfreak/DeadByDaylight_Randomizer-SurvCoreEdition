@@ -8,7 +8,7 @@ Set-Location -Path $PSScriptRoot
 
 # === GUI Setup ===
 $form = New-Object Windows.Forms.Form
-$form.Text = "DBD Loadout Generator - Survivor"
+$form.Text = "DBD Loadout Generator - Killer"
 $form.Width =  500
 $form.Height = 200
 
@@ -49,7 +49,7 @@ $form.Controls.Add($saveButton)
 
 $saveButton.Add_Click({
     $selectedLanguage = $languageDropdown.SelectedItem
-    Set-Content -Path "$PSScriptRoot\language.cfg" -Value $selectedLanguage -Encoding UTF8
+    Set-Content -Path "$PSScriptRoot\language_Killer.cfg" -Value $selectedLanguage -Encoding UTF8
 
     # Ausgabe aktualisieren – nur wenn Button geklickt wird
     $output.Text = "✅ Start-Sprache ist nun: $selectedLanguage"
@@ -57,7 +57,7 @@ $saveButton.Add_Click({
 
 
 # Sprache beim Start wiederherstellen
-$languageFile = "$PSScriptRoot\language.cfg"
+$languageFile = "$PSScriptRoot\language_Killer.cfg"
 if (Test-Path $languageFile) {
     $savedLanguage = Get-Content $languageFile -Encoding UTF8
     $index = $Languages.IndexOf($savedLanguage)
@@ -100,56 +100,20 @@ $button.Add_Click({
     $language = $languageDropdown.SelectedItem
     $role = $roleDropdown.SelectedItem
     $prefix = if ($language -eq "Deutsch") { "de" } else { "en" }
-    $dataPath = if ($language -eq "Deutsch") { ".\de" } else { ".\en" }
+    $dataPath = if ($language -eq "Deutsch") { ".\de_Killer" } else { ".\en_Killer" }
 
     try {
-        $characters = Get-Content "$dataPath\/${prefix}_chars_Survivors.csv" -Encoding UTF8
-        $perks = Get-Content "$dataPath\/${prefix}_perks_Survivors.csv" -Encoding UTF8
-        $offerings = Get-Content "$dataPath\/${prefix}_offerings_Survivors.csv" -Encoding UTF8
+        $characters = Get-Content "$dataPath\/${prefix}_chars_Killer.csv" -Encoding UTF8
+        $perks = Get-Content "$dataPath\/${prefix}_perks_Killer.csv" -Encoding UTF8
+        $offerings = Get-Content "$dataPath\/${prefix}_offerings_Killer.csv" -Encoding UTF8
+        $addons = Get-Content "$dataPath\/${prefix}_addonsColours_Killer.csv" -Encoding UTF8
         $char = Get-Random -InputObject $characters
         $perkText = (Get-Random -InputObject $perks -Count 4) -join " / "
         $offering = Get-Random -InputObject $offerings
-
-        $items = Get-Content "$dataPath\/${prefix}_items_Survivors.csv" -Encoding UTF8
-        $item = Get-Random -InputObject $items
-
-        # Itemtyp erkennen
-        switch -Regex ($item) {
-            "Flashlight|Taschenlampe"            { $itemCode = "FL" }
-            "Toolbox|Werkzeugkiste"              { $itemCode = "TB" }
-            "Med[- ]?Kit|Kasten"                 { $itemCode = "MK" }
-            "Key|ssel"                           { $itemCode = "K" }
-            "Map|Karte"                          { $itemCode = "M" }
-            "Nebel|Fog"           { $itemCode = "FV" }
-            "Extra"                              { $itemCode = "X" }
-            "None|Kein"                          { $itemCode = "none" }
-            default                              { $itemCode = "" }
-                             }
-       
-
-        # Add-ons laden abhängig vom Item-Typ
-        if ($itemCode -in @("FL", "TB", "MK", "K", "M", "FV")) {
-            $addonFile = "${prefix}_addons_${itemCode}_Survivors.csv"
-            $addonsPool = Get-Content "$dataPath\/$addonFile" -Encoding UTF8
-            } else {
-            $addonsPool = @()
-                                                               }
-      
-        # Maximal 2 Add-ons
-        $addonCount = Get-Random -Minimum 0 -Maximum 3
-
-        if ($addonCount -gt 0 -and $addonsPool.Count -gt 0) {
-            $addons = (Get-Random -InputObject $addonsPool -Count $addonCount) -join " / "
-            } else {
-            if ($language -eq "Deutsch") {
-                $addons = "Keine"
-            } else {
-                $addons = "None"
-                                         }
-                                                            }
+        $addonCombo = Get-Random -InputObject $addons
 
         # Ausgabe
-        $output.Text = "Perks: $perkText`nItem: $item`nAdd-ons: $addons`nOffering: $offering " #"$char`nPerks: $perkText`nItem: $item`nAdd-ons: $addons`nOffering: $offering"
+        $output.Text = "Perks: $perkText`nAdd-ons: $addonCombo`nOffering: $offering " #"$char`nPerks: $perkText`nItem: $item`nAdd-ons: $addons`nOffering: $offering"
         
     } catch {
         $output.Text = "⚠️ Fehler beim Laden der Daten. Prüfe die CSV-Dateien im Verzeichnis: ${dataPath}"
