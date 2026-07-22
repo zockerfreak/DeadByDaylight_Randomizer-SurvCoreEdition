@@ -3,8 +3,10 @@
 HUHW zu meinem kleinen Tool, mit welchem man sich für Dead by Daylight zufällig Perks, Items, Addons und Opfergabenauswählen kann. Viel Spaß damit!
 Es ist lange noch nicht perfekt, deshalb bitte ich, mir Auffälligkeiten (Fehler, Probleme, Vorschläge und Verbesserungsvorschläge) gerne auf Discord oder via Mail mitzuteilen: zckrfrk.business@t-online.de. Vielen Dank!
 
-Zum Starten des Tools im entpackten Ordner die BAT-Datei "DBD Loadout Generator - SurvCore Editon.bat" doppelklicken.
-Um eine Verknüpfung auf dem Desktop zu erstellen auf die Datei "DBD Loadout Generator - SurvCore Editon.bat" (Batch-Datei) rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
+Zum Starten des Tools im entpackten Ordner die jeweilige BAT-Datei doppelklicken:
+• "DBD Loadout Generator - SurvCore Editon.bat" für das Loadout für Survs
+• "DBD Loadout Generator - KillerEditon.bat" für das Loadout für Killer (befindet sich im Unterordner "KillerEdition")
+Um eine Verknüpfung auf dem Desktop zu erstellen auf die jeweilige Batch-Datei ("DBD Loadout Generator - SurvCore Editon.bat" und/oder "DBD Loadout Generator - KillerEditon.bat") rechtsklicken und Senden An > Desktop (Verknüpfung erstellen) auswählen.
 
 Bei Verwendung des Tools gerne meinen Namen "@zckrfrk" erwähnen/angeben, ich freue mich immer! :D
 
@@ -38,7 +40,7 @@ SurvCore Editon Version 3.0 - Update vom 22.07.2026 - DbD Version 10.0.3 (ebenso
 		1.1.1 Unterordner: de_Killer / en_Killer
 			1.1.1.1 Dateien: _addonsColours_Killer / _chars_Killer / _offerings_Killer / _perks_Killer
 		1.1.2 weitere Dateien: DBD Loadout Generator - KillerEditon.bat / language_Killer / skript_Killer (mir war wichtig, dass keine zwei Dateien gleich heißen, um Redundanzen zu vermeiden)
-	1.2 README mit #RautenUmrahmten# Überschriften versehen (aktuelle Version & ehemalige Versionen) und aktuelle Version wird schön eingerahmt
+	1.2 README mit #RautenUmrahmten# Überschriften versehen (aktuelle Version & ehemalige Versionen) und aktuelle Version wird schön eingerahmt + Erklärung am Anfang vom README mit der Killer-Batch-Datei erweitert
 	
 2. SKRIPT
 	2.1 Skript "skript" im Oberordner ist weiterhin das Skript für das Survivor-Loadout und wird vom Namen her nicht verändert
